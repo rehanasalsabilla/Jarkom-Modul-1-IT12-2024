@@ -59,9 +59,18 @@ Temukan pesan rahasia dari attacker
 
 #### Solusi : 
 - Langkah awal adalah melakukan command `nc 10.15.40.20 10010` pada terminal untuk melihat clue dari soal tersebut. Dan didapatkan jawaban flag berbentuk string.
+  ![10010](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/901c2cf6-c27d-4abc-ace4-a6230f298c13)
+
 - Ada clue yaitu *attachment: same as creds*. Dari hal tersebut kita coba lihat jawaban dari soal *creds* dan jawabannya berupa passwoard dan username. Disini mencoba mencari jawaban menggunakan aplikasi `FileZilla` dan menginputkan host (dari packet yang didapat creds), password dan username yang didapat pada soal creds.
+  ![Screenshot 2024-04-03 220023](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/9d263d8c-9dfb-4b58-b34d-dd5163420486)
+
 - Setelah menginputkan ketiga data tersebut akan muncul tampilan file gambar bernama `mirza` lalu download file tersebut untuk mengetahui isi file
+  ![Screenshot 2024-04-03 220042](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/33356fd0-1092-40a2-80c1-10e4ab4c7078)
+  
 - Setelah didownload ternyata isi dari gambar tersebut ada kalimat `MIO MIRZA`
+  ![mirza](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/cb398da0-a127-4ede-b48d-fa68dc9589cc)
+  
 - Inputkan kata tersebut kedalam jawaban pada `nc 10.15.40.20 10010`. Dan disini jawabannya benar lalu didapatkan format flag yang diberikan.
+  ![10010](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/a38411c5-55a2-4a65-b968-02394a1dbbf7)
  
   
