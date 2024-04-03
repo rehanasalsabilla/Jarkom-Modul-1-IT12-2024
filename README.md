@@ -45,9 +45,23 @@ Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali atte
 Selain menghitung jumlah packet, coba lacak juga ip penyerang tersebut!
 
 ### Solusi : 
-- Langkah pertama yaitu melihat soal dan clue yang di dapatkan dari `nc 10.15.40.20 10006` yang diberikan soal
-- Selanjutnya kita tau bahwa yang dimaksud adalah berbentuk *Alamat ip*
+- Langkah pertama yaitu melihat soal dan clue yang di dapatkan dari `nc 10.15.40.20 10006` yang diberikan soal. Selanjutnya kita tau bahwa yang dimaksud adalah berbentuk *Alamat ip*
+  ![10006](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/84aa48a5-2a76-4d03-8467-e2da65d9b166)
+
 - Dan merujuk dari jawaban soal `*ATM or ATP or FTP ? 🤔*` disini kita bisa melihat destination pada jawaban soal `*ATM or ATP or FTP ? 🤔*`. Dan didapatkan destination pada paket `tcp.stream eq 319`
-- Dan setelah itu inputkan destination yang didapatkan pada `nc 10.15.40.20 10006`. Dan jawaban benar lalu didapatkan format flag yang diberikan seperti dibawah ini
+  ![Screenshot 2024-03-30 231642](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/35cc6464-a2eb-4240-9530-04eab88dd553)
   
+- Dan setelah itu inputkan destination yang didapatkan pada `nc 10.15.40.20 10006`. Dan jawaban benar lalu didapatkan format flag yang diberikan seperti dibawah ini
+  ![10006](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/6df5b145-f17c-4778-8d50-28916362f1fa)
+
+## Soal 4 : Secret
+Temukan pesan rahasia dari attacker
+
+#### Solusi : 
+- Langkah awal adalah melakukan command `nc 10.15.40.20 10010` pada terminal untuk melihat clue dari soal tersebut. Dan didapatkan jawaban flag berbentuk string.
+- Ada clue yaitu *attachment: same as creds*. Dari hal tersebut kita coba lihat jawaban dari soal *creds* dan jawabannya berupa passwoard dan username. Disini mencoba mencari jawaban menggunakan aplikasi `FileZilla` dan menginputkan host (dari packet yang didapat creds), password dan username yang didapat pada soal creds.
+- Setelah menginputkan ketiga data tersebut akan muncul tampilan file gambar bernama `mirza` lalu download file tersebut untuk mengetahui isi file
+- Setelah didownload ternyata isi dari gambar tersebut ada kalimat `MIO MIRZA`
+- Inputkan kata tersebut kedalam jawaban pada `nc 10.15.40.20 10010`. Dan disini jawabannya benar lalu didapatkan format flag yang diberikan.
+ 
   
