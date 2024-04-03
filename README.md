@@ -29,7 +29,9 @@ Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali atte
 
 #### Solusi : 
 - Langkah pertama yaitu saya melihat clue dari nc soal ini yaitu `nc 10.15.40.20 10005`
+  ![10005](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/8c70cfca-f073-42ec-aecb-11dd80a3cd3a)
 - Dari soal diatas yaitu mencari tau total attemp login, dimana pasti ada percobaan menginputkan password, saya mencoba mencari melalui filter dengan kunci paket ftp karena dari soal diminta untuk mencari response. Lalu di dapatkan kunci lagi yaitu response dengan code 331 dan pesan *please specify the password*
+  
 - Lalu kita coba filter dengan lengkap yaitu `ftp.response.code == 331`. Dari pencarian tersebut kita lihat bagian bawah yang menunjukkan `display = 934` dimana itu adalah jumlah semua attemp login yang dimaksut soal.
 - Setelah mendapatkan angka tersebut, coba inputkan angka tersebut di dalam jawaban pada `nc 10.15.40.20 10005` dan di dapatkan flag dengan format yang diberikan
   
