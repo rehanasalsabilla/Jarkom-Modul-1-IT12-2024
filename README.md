@@ -22,4 +22,6 @@ Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan br
 
 Setelah di dapatkan flag tersebut, inputkan flag yang didapat berupa string tadi ke input jawaban pada `nc 10.15.40.20 10004`
 dan akan didapatkan format flag yang diberikan seperti dibawah ini 
+![10004](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/c63fa782-3bb0-4e48-990f-940936105f2c)
 
+## Soal 2 : 
