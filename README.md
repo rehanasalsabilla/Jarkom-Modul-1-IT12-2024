@@ -14,6 +14,8 @@ Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan br
   Menggunakan search *ftp* seperti dibawah ini
   ![Screenshot 2024-04-03 201017](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/a63b1119-6ddb-4949-9ba5-fc9188dbcc9f)
 
-- Lakukan command nc di terminal untuk mencari clue dari soal dan untuk mendapatkan flag yang didapatkan dari soal tersebut
+- Lakukan command *nc* di terminal untuk mencari clue dari soal dan untuk mendapatkan flag yang didapatkan dari soal tersebut `nc 10.15.40.20.10004`
+![1004](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/ae26f6f6-4208-4a02-8bb6-a03850059b17)
 
-- Follow semua paket dan cari flag yang berbentuk string sesuai dengan 
+- Follow semua paket dan cari flag yang berbentuk string sesuai dengan clue pada nc yang didapatkan. Dan didapatkan flag berupa string pada paket `tcp.stream eq 319`
+
