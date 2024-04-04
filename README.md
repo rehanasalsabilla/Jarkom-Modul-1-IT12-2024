@@ -72,5 +72,45 @@ Temukan pesan rahasia dari attacker
   
 - Inputkan kata tersebut kedalam jawaban pada `nc 10.15.40.20 10010`. Dan disini jawabannya benar lalu didapatkan format flag yang diberikan.
   ![10010](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/a38411c5-55a2-4a65-b968-02394a1dbbf7)
+
+## Soal 5 : Fuzz
+- Pertama-tama download file fuzz dan lakukan command 'nc 10.15.40.20 10001' pada terminal untuk melihat clue soal
+- Pada pertanyaan pertama kita disuruh untuk mencari IP address attacker. Kita dapat melakukannya dengan cara melihat IP apa saja yang masuk melalui kolom destination
+
+  ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/abe3103d-b569-4888-8242-f93c16e6325a)
+
+- Untuk clue soal ke 2 sampai 4 bisa kita temukan dengan cara mem follow TCP stream yang ada. Pada soal 2 web nya merupakan http maka port nya adalah 80. Lalu untuk soal 3 path yang digunakan adalah / atau root. Lalu untuk soal 4 terkait tools yang digunakan adalah ffuf versi 2.
+
+  ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/9907ca31-6bb6-4a1b-b100-b3dcda2fa1f6)
+
+- Pada soal terakhir mengenai username dan password yang berhasil masuk dapat dilakukan langkah-langkah berikut. Pertama-tama kita cari TCP stream dengan length paling besar karena ketika berhasil login maka program akan mengoutput kode html
+
+  ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/ea672181-f41c-49f5-b016-ae2d922bf2c5)
+  Setelah itu, kita tinggal mencari username dan password mana yang berhasil login
+
+  ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/f076a99a-fd38-4026-a4e4-d51dd1cb0ac8)
+
+- Untuk keseluruhan pertanyaan dan flag dapat dilihat pada gambar dibawah
+
+  ![Screenshot 2024-03-31 000627](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/6b9d2085-ad84-461a-ba86-1306660b5772)
+
+## Soal 6 : Evidence
+- Download file dan lakukan command 'nc 10.15.40.20 10002' pada terminal
+- Untuk clue pertama dan kedua kita disuruh untuk mencari domain dan web server yang digunakan korban
+- Tahapan yang dilakukan adalah buka paket, lalu urutkan kolom length dan lihat dari length yang terbesar. Setelah itu cari satu persatu info yang menampilkan HTTP/1.1 200 OK.
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/eb1cc9be-1d56-44b9-8a52-6b05e6c2a8b9)
+
+- Dapat kita lihat bahwa domain dan web server yang digunakan adalah nanomate-solutions.com dan apache-2.4.56
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/f0ce6da3-3bf7-4b97-9302-b2408ca92e5a)
+
+- Pada soal ke 3 dan ke 4 bisa kita lihat dengan cara mencari stream satu per satu hingga bertemu stream seperti tampilan dibawah
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/1b2225ed-cc37-42c7-b150-2954fb0b5a1c)
+
+- Untuk tampilan soal-soal pada terminal dan flag dapat dilihat pada gambar dibawah
+
+![Screenshot 2024-03-31 000156](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/0a144ca1-6c1f-46fd-95dd-5509e1c735d7)
  
   
