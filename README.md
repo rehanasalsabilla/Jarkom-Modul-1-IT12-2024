@@ -74,6 +74,7 @@ Temukan pesan rahasia dari attacker
   ![10010](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/a38411c5-55a2-4a65-b968-02394a1dbbf7)
 
 ## Soal 5 : Fuzz
+My website got hacked. Can you analyze this network traffic to help me track the attacker?
 
 #### Solusi :
 - Pertama-tama download file fuzz dan lakukan command 'nc 10.15.40.20 10001' pada terminal untuk melihat clue soal
@@ -97,6 +98,7 @@ Temukan pesan rahasia dari attacker
   ![Screenshot 2024-03-31 000627](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/6b9d2085-ad84-461a-ba86-1306660b5772)
 
 ## Soal 6 : Evidence
+Perusahaan nanomate baru saja kebobolan. Mereka menyewamu untuk mencari tahu bagaimana caranya pelaku bisa masuk.
 
 #### Solusi :
 - Download file dan lakukan command 'nc 10.15.40.20 10002' pada terminal
@@ -118,6 +120,7 @@ Temukan pesan rahasia dari attacker
 ![Screenshot 2024-03-31 000156](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/0a144ca1-6c1f-46fd-95dd-5509e1c735d7)
 
 ## Soal 7 : Creds
+Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensialn dari server ftp yang dibuat oleh attacker
 
 #### Solusi :
 - Pertama-tama download file dan buka 'nc 10.15.40.20 10007' pada terminal
@@ -131,6 +134,7 @@ Temukan pesan rahasia dari attacker
 ![Screenshot 2024-03-30 235520](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/26f859de-793a-416d-be74-b4bc871b71a6)
 
 ## Soal 8 : Malwleowleo
+Dapatkah kamu menemukan file malware yang dikirim oleh attacker melalui ftp?
 
 #### Solusi :
 - Buka file yang sama dengan creds lalu masukkan command 'nc 10.15.40.20 10008' di terminal
@@ -144,6 +148,7 @@ Temukan pesan rahasia dari attacker
 ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/d699ef32-0d01-4703-ade5-4c3c32e81f2d) 
 
 ## Soal 9 : whoami
+Dapatkah kamu menemukan siapa identitas attacker?
 
 #### Solusi :
 - Buka file yang sama dengan creds lalu input command 'nc 10.15.40.20 10009' di terminal
@@ -161,7 +166,3 @@ Temukan pesan rahasia dari attacker
 - Untuk tampilan terminal dan flag yang didapat seperti dibawah
 
 ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/54aa5429-34d5-4c8c-a387-3babeb66dc4a)
-
-
-
-
