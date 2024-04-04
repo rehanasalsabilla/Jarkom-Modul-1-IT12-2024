@@ -112,5 +112,46 @@ Temukan pesan rahasia dari attacker
 - Untuk tampilan soal-soal pada terminal dan flag dapat dilihat pada gambar dibawah
 
 ![Screenshot 2024-03-31 000156](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/0a144ca1-6c1f-46fd-95dd-5509e1c735d7)
- 
-  
+
+## Soal 7 : Creds
+- Pertama-tama download file dan buka 'nc 10.15.40.20 10007' pada terminal
+- Untuk clue pertama dan kedua cari username dan password yang berhasil dilakukan oleh hacker
+- Caranya adalah dengan mengikuti stream TCP hingga bertemu log yang mengoutput login succesful.
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/b1b1c1cf-d29a-48ae-99dc-dd98a4260a86)
+
+- Untuk flag yang didapatkan seperti dibawah
+
+![Screenshot 2024-03-30 235520](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/26f859de-793a-416d-be74-b4bc871b71a6)
+
+## Soal 8 : Malwleowleo
+- Buka file yang sama dengan creds lalu masukkan command 'nc 10.15.40.20 10008' di terminal
+- Untuk soal yang kita cari hanya nama malware yang dikirim oleh attacker
+- Caranya adalah dengan mengikuti stream hingga bertemu dengan nama malwarenya yaitu 'm4L1c10us_W4re.c'
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/e97eb39f-d175-498c-be1b-8b64a35f685d)
+
+- Untuk flag yang didapatkan seperti dibawah
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/d699ef32-0d01-4703-ade5-4c3c32e81f2d) 
+
+## Soal 9 : whoami
+- Buka file yang sama dengan creds lalu input command 'nc 10.15.40.20 10009' di terminal
+- Soal yang dicari adalah nama attacker
+- Caranya adalah mengikuti stream hingga bertemu dengan file c yang sus seperti gambar dibawah
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/509b0b38-2d19-4539-9156-b38a0aff9ef3)
+
+- Dapat kita lihat diatas kalau terdapat teks yang sudah terenkripsi
+- Langkah selanjutnya adalah mendecode teks tersebut. Teks tersebut ternyata telah di enkripsi menggunakan base64.
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/afd3d96b-75e5-4f87-a457-d7bd89851b87)
+
+- Dapat dilihat bahwa nama sang attacker adalah Paul Atreides
+- Untuk tampilan terminal dan flag yang didapat seperti dibawah
+
+![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/54aa5429-34d5-4c8c-a387-3babeb66dc4a)
+
+
+
+
