@@ -1,6 +1,6 @@
 ## Kelompok IT12
 
-# Laporan Resmi Praktikum Jarkom - Modul 1
+# Laporan Resmi Praktikum Jarkom - Modul 1 - Wireshark
 
 ### Anggota Kelompok
 - Rehana Putri Salsabilla ( 5027221015 )
@@ -74,6 +74,8 @@ Temukan pesan rahasia dari attacker
   ![10010](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/136863633/a38411c5-55a2-4a65-b968-02394a1dbbf7)
 
 ## Soal 5 : Fuzz
+
+#### Solusi :
 - Pertama-tama download file fuzz dan lakukan command 'nc 10.15.40.20 10001' pada terminal untuk melihat clue soal
 - Pada pertanyaan pertama kita disuruh untuk mencari IP address attacker. Kita dapat melakukannya dengan cara melihat IP apa saja yang masuk melalui kolom destination
 
@@ -95,6 +97,8 @@ Temukan pesan rahasia dari attacker
   ![Screenshot 2024-03-31 000627](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/6b9d2085-ad84-461a-ba86-1306660b5772)
 
 ## Soal 6 : Evidence
+
+#### Solusi :
 - Download file dan lakukan command 'nc 10.15.40.20 10002' pada terminal
 - Untuk clue pertama dan kedua kita disuruh untuk mencari domain dan web server yang digunakan korban
 - Tahapan yang dilakukan adalah buka paket, lalu urutkan kolom length dan lihat dari length yang terbesar. Setelah itu cari satu persatu info yang menampilkan HTTP/1.1 200 OK.
@@ -114,6 +118,8 @@ Temukan pesan rahasia dari attacker
 ![Screenshot 2024-03-31 000156](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/0a144ca1-6c1f-46fd-95dd-5509e1c735d7)
 
 ## Soal 7 : Creds
+
+#### Solusi :
 - Pertama-tama download file dan buka 'nc 10.15.40.20 10007' pada terminal
 - Untuk clue pertama dan kedua cari username dan password yang berhasil dilakukan oleh hacker
 - Caranya adalah dengan mengikuti stream TCP hingga bertemu log yang mengoutput login succesful.
@@ -125,6 +131,8 @@ Temukan pesan rahasia dari attacker
 ![Screenshot 2024-03-30 235520](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/26f859de-793a-416d-be74-b4bc871b71a6)
 
 ## Soal 8 : Malwleowleo
+
+#### Solusi :
 - Buka file yang sama dengan creds lalu masukkan command 'nc 10.15.40.20 10008' di terminal
 - Untuk soal yang kita cari hanya nama malware yang dikirim oleh attacker
 - Caranya adalah dengan mengikuti stream hingga bertemu dengan nama malwarenya yaitu 'm4L1c10us_W4re.c'
@@ -136,6 +144,8 @@ Temukan pesan rahasia dari attacker
 ![image](https://github.com/rehanasalsabilla/Jarkom-Modul-1-IT12-2024/assets/143682058/d699ef32-0d01-4703-ade5-4c3c32e81f2d) 
 
 ## Soal 9 : whoami
+
+#### Solusi :
 - Buka file yang sama dengan creds lalu input command 'nc 10.15.40.20 10009' di terminal
 - Soal yang dicari adalah nama attacker
 - Caranya adalah mengikuti stream hingga bertemu dengan file c yang sus seperti gambar dibawah
